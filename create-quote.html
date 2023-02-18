@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>New Quote</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo"><a href="index.html">QuoteMi</a></div>
+        <div class="nav">
+          <a href="login.html">Log in</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="wrap">
+          <div class="dropdown-search">
+            <i class="fa fa-search dropbtn" onclick="showDropSearch()"></i>
+            <div id="myDropdown" class="dropdownSearch">
+              <input
+                type="text"
+                placeholder="Search quotes.."
+                class="searchField"
+              />
+            </div>
+          </div>
+          <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main id="create-quote-main">
+      <h3>New Quote</h3>
+      <form action="#">
+        <select name="categories" id="cate">
+          <option value="motivation">Motivation</option>
+          <option value="inspiration">Inspiration</option>
+          <option value="life">Life</option>
+          <option value="politics">Politics</option>
+          <option value="sports">Sports</option>
+          <option value="technology">Technology</option>
+          <option value="discipline">Discipline</option>
+          <option value="love">Love</option>
+        </select>
+      </form>
+      <textarea
+        placeholder="'Start writing a quote...'"
+      ></textarea>
+      <input placeholder="author" class="quote-author" type="text" />
+      <input class="btn-submit" type="button" value="submit" />
+    </main>
+    <footer>
+      <span class="span-one">copyright &copy; 2023 QuoteMi.</span>
+      <span class="span-one"><a href="">Privacy Policy.</a></span>
+      <span class="span-one"><a href="">Terms and conditions</a></span>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/all.js"></script>
+  </body>
+</html>
